@@ -16,6 +16,7 @@ void one_three(void)
 	two();
 	printf("three\n");
 }
+
 void two(void)
 {
 	printf("two\n");
