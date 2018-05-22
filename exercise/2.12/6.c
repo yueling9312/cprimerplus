@@ -1,22 +1,14 @@
 #include <stdio.h>
-void fa(void);
 int main(void)
 {
-	fa();
-	fa();
-	fa();
-	printf("\n");
-	fa();
-	fa();
-	printf("\n");
-	fa();
-	printf("\n");
+	int toes;
+	int toes2;
+	int toes3;
+	toes=10;
+	toes2=toes+toes;
+	toes3=toes*toes;
 
+	printf("toes=%d\ntoes2=%d\ntoes3=%d\n",toes,toes2,toes3);
+	
 	return 0;
 }
-
-void fa(void)
-{
-	printf("Smile!");
-}
-

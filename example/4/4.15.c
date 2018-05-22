@@ -5,6 +5,7 @@ int main(void)
 	float assets;
 	char pet[30];
 	
+	printf("Enter your age, assets, and favorite pet.\n");	
 	scanf("%d %f",&age,&assets);
 	scanf("%s",pet);
 

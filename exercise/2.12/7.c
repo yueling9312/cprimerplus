@@ -1,24 +1,22 @@
 #include <stdio.h>
-void one_three(void);
-void two(void);
+void fa(void);
 int main(void)
 {
-	printf("starting now:\n");
-	one_three();
-	printf("done!\n");
-	
+	fa();
+	fa();
+	fa();
+	printf("\n");
+	fa();
+	fa();
+	printf("\n");
+	fa();
+	printf("\n");
+
 	return 0;
 }
 
-void one_three(void)
+void fa(void)
 {
-	printf("one\n");
-	two();
-	printf("three\n");
-}
-
-void two(void)
-{
-	printf("two\n");
+	printf("Smile!");
 }
 

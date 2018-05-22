@@ -1,14 +1,28 @@
 #include <stdio.h>
+void br(void);
+void ic(void);
 int main(void)
 {
-	int toes;
-	int toes2;
-	int toes3;
-	toes=10;
-	toes2=toes+toes;
-	toes3=toes*toes;
+	br();
+	printf(", ");
+	ic();
+	printf("\n");
 
-	printf("toes=%d\ntoes2=%d\ntoes3=%d\n",toes,toes2,toes3);
-	
+	ic();
+	printf(",\n");
+	br();
+	printf("\n");
+
 	return 0;
 }
+
+void br(void)
+{
+	printf("Brazil, Russia");
+}
+
+void ic(void)
+{
+	printf("India, China");
+}
+
