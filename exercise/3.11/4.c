@@ -1,7 +1,12 @@
 #include <stdio.h>
 int main (void)
 {
-	float a=21.29;
-	printf("The input is %f or %e .\n",a,a);
+	double a;
+	
+	printf("Enter a floating-point value:");
+	scanf("%lf",&a);
+	printf("fixed-point notation:%.6f\n",a);
+	printf("exponential notation:%.6e\n",a);
+	printf("p notation:%a\n",a);
 	return 0;
 }

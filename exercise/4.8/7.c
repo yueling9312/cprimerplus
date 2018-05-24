@@ -1,23 +1,13 @@
 #include <stdio.h>
+#include <float.h>
 int main(void)
 {
-	double mile;
-	double gallon;
-	double mg;
-	
-	const float L=3.785;
-	const float KM=1.609;
+	double a=1.0/3.0;
+	float b=1.0/3.0;
 
-	printf("输入行驶的英里数：\n");
-	scanf("%lf",&mile);
-	
-	printf("输入消耗汽油的加仑数：\n");
-	scanf("%lf",&gallon);
+	printf("%.4f %.12f %.16f\n",a,a,a);
+	printf("%.4f %.12f %.16f\n",b,b,b);
 
-	mg=mile/gallon;
-
-
-	printf("消耗每加仑汽油行驶的英里数=%.1e\n",mg);
-	printf("每行驶100公里消耗汽油的升数=%.1e\n",L/(mg*100*KM));
+	printf("%d %d\n",FLT_DIG,DBL_DIG);
 	return 0;
 }

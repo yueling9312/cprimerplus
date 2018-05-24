@@ -1,22 +1,18 @@
 #include <stdio.h>
-#include <string.h>
 int main(void)
 {
-	char first [10];
-	char second [10];
-	int width1;
-	int width2;
+	float MB;
+	float speed;
+	float time;
+	
+	printf("输入下载速度（Mb\\s)：");
+	scanf("%f",&speed);
+	printf("输入文件大小（MB）：");
+	scanf("%f",&MB);
+	
+	time=MB*8/speed;
 
-
-	printf("输入名字：\n");
-	scanf("%s",first);
-	printf("输入姓氏：\n");
-	scanf("%s",second);
-
-	printf("%s %s\n",first,second);
-	width1=strlen(first);
-	width2=strlen(second);
-	printf("%*d %*d\n",width1,width1,width2,width2);
-	printf("%-*d %-*d\n",width1,width1,width2,width2);
+	printf("At %.2f megabits per second, a file of %.2f megabytes\ndownloads in %.2f seconfs.\n",speed,MB,time);
+	
 	return 0;
 }
