@@ -15,7 +15,7 @@ int main(void)
 	{
 		left = sec % SEC_PER_MIN;
 		//min = (sec - left) / SEC_PER_MIN;//lyn的做法
-		min = sec / SEC_PER_MIN;//例题中的做法&截取整数部分
+		min = sec / SEC_PER_MIN;//例题中的做法&截取整数部分****注意，两数均为整数时/才会截断
 		
 		printf("%d seconds is %d minutes, %d seconds.\n",sec,min,left);
 		printf("Enter next value (<=0 to quit):\n");
