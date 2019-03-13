@@ -1,7 +1,7 @@
 #include <stdio.h>
 void print(char start, int line_no)
  {
-	for(int j = 0, ; j < line_no; j++)
+	for(int j = 0 ; j < line_no; j++)
 		printf("%c",start + j);
 	printf("\n");
 }
