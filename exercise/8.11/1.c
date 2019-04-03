@@ -14,5 +14,6 @@ int main(void)
 	0 && i++;
 	1 || i++;
 	printf("%d\n",i);*/
+	//test for commit
 	return 0;
 }
