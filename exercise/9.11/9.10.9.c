@@ -12,30 +12,34 @@ void a_print(void)
 int b_number(int x, int y)
 {
 	int choice;
-	scanf("%d",&choice)
-	if (x - y > 0)
-		max = x;
-	else
-		max = y;
-	if (z - max > 0)
-		max = z;
-	return choice;
+	while (scanf("%d", &choice) == 1)
+	{
+		if (choice > x || choice < y)
+		{
+			a_print();
+			continue;
+		}
+		else
+			return choice;
+	}
+	return x;
 }
 int main(void)
 {
 	int choice;
 	a_print();
-	while (choice = b_number(UP, DOWN) != 4)
+	while ((choice = b_number(UP, DOWN)) != 4)
 	{
 		switch (choice)
 		{
-		case '1': printf("copy files\n");
+		case 1: printf("copy files\n");
 			 break;
-			 '2': printf("move files\n");
+		case 2: printf("move files\n");
 			 break;
-			 '3': printf("remove files\n");
+		case 3: printf("remove files\n");
 			 break;
-			 default: printf("error!\n");			
+		default: printf("error!\n");
+			 break;
 		}
 	}
 	printf("bye!\n");
