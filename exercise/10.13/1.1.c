@@ -9,7 +9,7 @@ void sum1(float (*ar)[MONTHS], int year)
 	{
 		float subtot = 0.0;
 		for (int m = 0; m < MONTHS; m++)
-			subtot += ar[y][m];
+			subtot += (*(ar + y))[m];
 		printf("%5d %15.1f\n", 2010 + y, subtot);
 		total += subtot;
 	}
@@ -25,7 +25,7 @@ void sum2(float (*ar)[MONTHS], int year)
 	{
 		float subtot = 0;
 		for (int y = 0; y < year; y++)
-			subtot += ar[y][m];
+			subtot += (*(ar + y))[m];
 		printf("%4.1f", subtot / year);
 	}
 	printf("\n");
