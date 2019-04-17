@@ -1,18 +1,23 @@
 #include <stdio.h>
 #include "2_pe12-2a.h"
-static char * mode;
+static char * mode = "metric";
 static double dist;
 static double cons;
 void get_mode(int a)
 {	
 	static int last;
 	if (a == 0)
+	{
 		mode = "metric";
+		last = a;
+	}
 	else if (a == 1)
+	{
 		mode = "US";
+		last = a;
+	}		
 	else
-		printf("Invalid mode specified. Mode %d(%s) used.\n", last, mode);	
-	last = a;
+		printf("Invalid mode specified. Mode %d(%s) used.\n", last, mode);		
 }
 void get_info(void)
 {	
